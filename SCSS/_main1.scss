@@ -1,0 +1,107 @@
+.div{
+    height: 15rem;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-image: url(./imágenes/blob-haikei.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.titulos{
+    text-align: center;
+}
+.pag-section{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.intro{
+    position: relative;
+}
+@media (min-width: 992px){
+.intro .intro-img {
+    width: 75%;
+    float: right;
+}
+.intro .intro-text{
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+}
+.intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+}
+.list-hours {
+    width: 50%;
+    font-size: 1.1rem;
+}
+}
+.bg-faded{
+    background-color: $color1;
+}
+.section-heading{
+    text-transform: uppercase;  
+    color: #212529; 
+}
+.section-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: $weigth1;
+    font-family: $titulo-font;
+}
+.section-heading-lower {
+    display: block;
+    font-size: $size1;
+    font-weight: $weigth2;
+    font-family: $titulo-font;
+}
+p {
+    line-height: 1.75;
+    font-family: $texto-font;
+}
+.btn-primary {
+    color: #000;
+    background-color: $color2;
+    border-color: $color2;
+}
+.segunda {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgba(230, 167, 86, 0.9);
+}
+.segunda .segunda-text {
+    position: relative;
+    padding: 3rem;
+    margin: 1rem;
+}
+iframe{
+    width: 80%;
+    height: 20rem;
+    vertical-align: middle;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+.list-hours {
+    font-size: 0.9rem;
+}
+.list-hours .list-hours-item {
+    border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+.ms-auto {
+    margin-left: auto !important;
+}
+.grupoTextarea{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}

@@ -1,107 +1,244 @@
-.div{
-    height: 15rem;
-    width: 50%;
-    margin-left: 25%;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    background-image: url(./imágenes/blob-haikei.png);
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
+/* Estilos generales main */
+main {
+    margin: 0;
+    padding: 0;
+    color: $color4;
 }
-.titulos{
-    text-align: center;
+
+/* Estilos para la página index.html */
+/* Estilos primera sección */
+.pag-section {
+    padding: 5rem 0;
+    margin: 0 auto;
 }
-.pag-section{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-.intro{
+
+.intro {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $color3;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-@media (min-width: 992px){
-.intro .intro-img {
-    width: 75%;
-    float: right;
-}
-.intro .intro-text{
-    left: 0;
-    width: 60%;
-    margin-top: 3rem;
-    position: absolute;
-}
-.intro .intro-text .intro-button {
+
+.intro-img {
     width: 100%;
-    left: 0;
-    position: absolute;
+    max-width: 800px;
+    border-radius: 1rem;
 }
-.list-hours {
-    width: 50%;
-    font-size: 1.1rem;
-}
-}
-.bg-faded{
+
+.intro-text {
+    line-height: 1.5;
+    color: $color4;
     background-color: $color1;
 }
-.section-heading{
-    text-transform: uppercase;  
-    color: #212529; 
-}
-.section-heading-upper {
-    display: block;
-    font-size: 1rem;
+
+.section-heading-upper{
+    font-family: $titulo-font;
     font-weight: $weigth1;
-    font-family: $titulo-font;
+    color: $color6;
 }
-.section-heading-lower {
-    display: block;
-    font-size: $size1;
+.section-heading-lower{
+    font-family: $titulo-font;
     font-weight: $weigth2;
-    font-family: $titulo-font;
+    color: $color4;
 }
-p {
-    line-height: 1.75;
+
+main p {
     font-family: $texto-font;
+    font-weight: $weigth2;
+    font-size: 1rem;
+    color: $color5;
+    margin: 0 0 1rem;
 }
-.btn-primary {
-    color: #000;
+
+main .intro-button {
+    margin-top: 2rem;
+}
+
+main .btn-primary {
+    color: #fff;
     background-color: $color2;
     border-color: $color2;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
 }
+
+main .btn-primary:hover {
+    background-color: $color6;
+    border-color: $color6;
+}
+
+/* Estilos segunda sección */
 .segunda {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: rgba(230, 167, 86, 0.9);
+    background-color: $color3;
+    padding: 5rem 1rem;
 }
-.segunda .segunda-text {
-    position: relative;
+
+.segunda-text {
+    background-color: $color1;
     padding: 3rem;
-    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-iframe{
-    width: 80%;
-    height: 20rem;
-    vertical-align: middle;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+
+/* Estilos responsives */
+@media (min-width: 768px) {
+    main .intro {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    main .intro-img {
+        width: 50%;
+        margin-right: 2rem;
+    }
+
+    main .intro-text {
+        width: 50%;
+    }
 }
-.list-hours {
-    font-size: 0.9rem;
+
+/* Estilos para la página horario.html */
+.info-add{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.list-hours .list-hours-item {
-    border-bottom: 1px solid rgba(230, 167, 86, 0.5);
-    padding-bottom: 0.25rem;
-    margin-bottom: 1rem;
-    font-style: italic;
+
+.info-add-title{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
 }
-.ms-auto {
-    margin-left: auto !important;
+
+.section-heading-upper-add{
+    font-family: $titulo-font;
+    font-weight: $weigth1;
+    color: $color6;
+    align-self: flex-start;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
-.grupoTextarea{
-    width: 100%;
+
+.section-heading-lower-add{
+    font-family: $titulo-font;
+    font-weight: $weigth2;
+    color: $color4;
 }
-textarea{
-    width: 100%;
+
+/* Estilos para la sección Horarios */
+.horario-section {
+    background-color: $color3;
+    padding: 3rem 1rem;
+}
+
+.horario-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.horario-text {
+    background-color: $color1;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.horario-heading {
+    font-family: $titulo-font;
+    font-weight: $weigth2;
+    color: $color4;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.horario-list {
+    font-family: $texto-font;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $color4;
+}
+
+.horario-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.horario-time {
+    font-weight: bold;
+    color: $color6;
+    margin-left: auto;
+}
+
+.horario-address {
+    font-size: 1rem;
+    font-family: $texto-font;
+    color: $color5;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .horario-section {
+        padding: 2rem 0.5rem;
+    }
+
+    .horario-text {
+        padding: 1.5rem;
+    }
+
+    .horario-heading {
+        font-size: 1.5rem;
+    }
+
+    .horario-list {
+        font-size: 0.9rem;
+    }
+
+    .horario-address {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .horario-list {
+        font-size: 1.1rem;
+    }
+
+    .horario-heading {
+        font-size: 2rem;
+    }
+}
+
+/* Estilos pedidos de medicamentos */
+.grupoTextarea {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 100%; 
+}
+
+.grupoTextarea label {
+    margin-bottom: 0.5rem; 
+}
+
+.grupoTextarea textarea {
+    width: 100%; 
+    min-height: 120px; 
+    padding: 0.5rem; 
+    font-size: 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    resize: vertical; 
+    box-sizing: border-box;
 }

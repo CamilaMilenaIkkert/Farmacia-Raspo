@@ -1,25 +1,78 @@
-.header{
-    height: auto;
+/* Estilos generales header */
+.header {
+    background-color: #fff;
     width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.header__texto{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1;
-    font-family: $titulo-font;
+
+.container.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Estilos logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Estilos nav */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.navbar-toggler {
+    background-color: $color5;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.nav-item {
     text-align: center;
 }
-.header--texto1{
-    display: block;
-    font-size: $size1;
-    font-weight: $weigth1;
-    color: rgb(230, 167, 86);
-    margin-bottom: 1rem;
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color4;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
 }
-.header--texto2{
-    color: #f6e1c5;
-    font-weight: $weigth2;
-    font-size: $size2;
-    line-height: 4rem;
+.nav-link:hover {
+    color: $color5;
 }
+
+/* Estilos responsives */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
